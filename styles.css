@@ -1,0 +1,257 @@
+:root {
+    --white: #eee7e7;
+    --yellow: #e1e190;  
+    --black: #101010;
+    --pink : #fbe9dd;
+    --light-gray: #222;
+    --orange: rgb(255, 81, 18);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Kalam", cursive, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--light-gray);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 9vh;;
+    min-height: 50px;
+    background-color: var(--pink);
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+  }
+
+.logo {
+    height: 100%;
+    width: auto;
+    padding: 2px;
+    margin-left: 2px;
+}
+
+#navbar {
+    width: 40%;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 20px;
+    list-style: none;   
+}
+
+#navbar ul li {
+    font-size: 1.2rem;
+    margin: 0 0.3rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--black);
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--black);
+    }
+}
+
+#welcome {
+    height: 100vh;
+    background-color: var(--white);
+}
+
+.bg-img {
+    background-image: url('./images/cookies3.png');
+    width: 100%;
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.overlay {
+    background-color: rgba(96, 72, 72, .6);
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.bg-text {
+    color: var(--white);
+    font-family: "Ms Madi", cursive;
+    position: absolute;
+    
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    padding: 10px;
+    z-index: 1;
+}
+
+.bg-text h2 {
+    font-size: 4rem;
+}
+
+.bg-text h1 {
+    font-size: 6.5rem;
+}
+
+.bg-text p {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--orange);
+}
+
+#products {
+    background-color: var(--pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.intro {
+    width: 80%;
+    margin: 20px;
+    text-align: center;
+}
+
+.intro p {
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.product-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-img {
+    width: max(20vw, 300px);
+    height: auto;
+    object-fit: cover;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-text {
+    width: max(30vw, 300px);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.product-text p {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+#testimonials {
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.testimonial {
+    width: max(20vw, 300px);
+    aspect-ratio: 4 / 5;
+    background-color: #e2dddd;
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.testimonial dl dt {
+    height: 90%;
+}
+
+.testimonial dl dd {
+    height: 10%;
+}
+
+#contact {
+    height: 60vh;
+    background-color: var(--light-gray);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact p {
+    margin-top: 12px;
+    font-size: 1.2rem; 
+    color: var(--white);
+}
+
+#reach {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 20px;
+  }
+  
+.contact-detail {
+    margin: 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--yellow);
+  
+    &:hover {
+      color: var(--white);
+      transform: translateY(6px);
+      transition: transform 0.3s ease-out;
+    }
+  }
