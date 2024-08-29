@@ -21,6 +21,10 @@ html {
     color: var(--light-gray);
 }
 
+.orange-text {
+    color: var(--orange);
+    font-weight: 500;
+}
 
 /* HEADER */
 
@@ -132,9 +136,8 @@ header {
 
 .bg-text p {
     font-size: 3rem;
-    font-weight: 500;
     margin-top: 20px;
-    color: var(--orange);
+    
 }
 
 /* PRODUCTS SECTION */
