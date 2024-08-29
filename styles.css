@@ -21,10 +21,14 @@ html {
     color: var(--light-gray);
 }
 
+
+/* HEADER */
+
 header {
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 9vh;;
+    height: 9vh;
     min-height: 50px;
     background-color: var(--pink);
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -33,7 +37,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
   }
 
 .logo {
@@ -73,6 +76,8 @@ header {
         background-color: var(--black);
     }
 }
+
+/* WELCOME SECTION */
 
 #welcome {
     height: 100vh;
@@ -132,15 +137,19 @@ header {
     color: var(--orange);
 }
 
+/* PRODUCTS SECTION */
+
 #products {
+    width: 100%;
     background-color: var(--pink);
+    gap: 5vh;
+    padding: 30px;
+    font-size: 1.2rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5vh;
-    padding: 30px;
-    font-size: 1.2rem;
 }
 
 .intro {
@@ -159,6 +168,9 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid var(--light-gray);
 }
 
 .product-img {
@@ -172,7 +184,10 @@ header {
     width: max(30vw, 300px);
     display: flex;
     flex-direction: column;
-    
+}
+
+.product-text h2 {
+    text-decoration: underline;
 }
 
 .product-text p {
@@ -180,6 +195,8 @@ header {
     margin: 10px 0;
     text-align: justify;
 }
+
+/* TESTIMONIAL SECTION */
 
 #testimonials {
     width: 100%;
@@ -198,17 +215,19 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10vw;
+
+    margin: 2rem 0;
 }
 
 .testimonial {
-    width: max(20vw, 300px);
-    aspect-ratio: 4 / 5;
-    background-color: #e2dddd;
-    padding: 12px;
+    width: max(20vw, 400px);
+    background-color: #f2f2f2;
+    padding: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.4;
+    border-radius: 10px;
 }
 
 .testimonial dl dt {
@@ -216,31 +235,41 @@ header {
 }
 
 .testimonial dl dd {
+    margin-top: 2rem;
     height: 10%;
 }
 
+/* CONTACT SECTION */
+
 #contact {
-    height: 60vh;
+    height: 50vh;
+    width: 100%;
     background-color: var(--light-gray);
     color: var(--white);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+#contact h1 {
+    font-size: 3rem;
+}
+
 #contact p {
     margin-top: 12px;
-    font-size: 1.2rem; 
+    font-size: 1.5rem; 
     color: var(--white);
 }
 
 #reach {
+    margin: 60px 20px;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 60px 20px;
   }
   
 .contact-detail {
@@ -254,4 +283,6 @@ header {
       transform: translateY(6px);
       transition: transform 0.3s ease-out;
     }
-  }
+}
+
+/* FOOTER */
