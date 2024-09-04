@@ -52,6 +52,7 @@ header {
 
 #navbar {
     width: 45%;
+    margin-right: 0.5rem;
 }
 
 #navbar ul {
@@ -118,7 +119,7 @@ header {
     font-family: "Ms Madi", cursive;
     position: absolute;
     
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -138,7 +139,6 @@ header {
 .bg-text p {
     font-size: 3rem;
     margin-top: 20px;
-    
 }
 
 /* PRODUCTS SECTION */
@@ -179,7 +179,7 @@ header {
 }
 
 .product-img {
-    width: max(20vw, 300px);
+    width: max(20vw, 200px);
     height: auto;
     object-fit: cover;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -305,6 +305,18 @@ header {
     .product-info {
         width: 90%;
     }
+
+    .bg-text h2 {
+        font-size: 3rem;
+    }
+    
+    .bg-text h1 {
+        font-size: 4rem;
+    }
+    
+    .bg-text p {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -330,6 +342,22 @@ header {
         margin-top: 12px;
         font-size: 1.1rem; 
         color: var(--white);
+    }
+
+    .bg-text h2 {
+        font-size: 2.5rem;
+    }
+    
+    .bg-text h1 {
+        font-size: 3.5rem;
+    }
+    
+    .bg-text p {
+        font-size: 1.5rem;
+    }
+
+    .testimonial {
+        width: 285px;
     }
 }
 
