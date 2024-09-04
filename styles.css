@@ -202,38 +202,6 @@ header {
     text-align: justify;
 }
 
-@media screen and (max-width: 1000px) {
-    #navbar {
-        width: 55%;
-    }
-
-    #navbar ul li {
-        font-size: 1rem;
-        margin: 0 0.2rem;
-        padding: 0.2rem;
-    }
-
-    .product-info {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    #navbar {
-        width: 70%;
-    }
-
-    #navbar ul li {
-        font-size: 0.9rem;
-        margin: 0 0.15rem;
-        padding: 0.1rem;
-    }
-
-    .product-info {
-        width: 95%;
-    }
-}
-
 /* TESTIMONIAL SECTION */
 
 #testimonials {
@@ -280,7 +248,7 @@ header {
 /* CONTACT SECTION */
 
 #contact {
-    height: 50vh;
+    height: max(50vh, 25rem);
     width: 100%;
     background-color: var(--light-gray);
     color: var(--white);
@@ -320,6 +288,48 @@ header {
       color: var(--white);
       transform: translateY(6px);
       transition: transform 0.3s ease-out;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar {
+        width: 55%;
+    }
+
+    #navbar ul li {
+        font-size: 1rem;
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .product-info {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navbar {
+        width: 70%;
+    }
+
+    #navbar ul li {
+        font-size: 0.9rem;
+        margin: 0 0.15rem;
+        padding: 0.1rem;
+    }
+
+    .product-info {
+        width: 95%;
+    }
+
+    #contact h1 {
+        font-size: 2rem;
+    }
+
+    #contact p {
+        margin-top: 12px;
+        font-size: 1.1rem; 
+        color: var(--white);
     }
 }
 
