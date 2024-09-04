@@ -51,7 +51,7 @@ header {
 }
 
 #navbar {
-    width: 40%;
+    width: 45%;
 }
 
 #navbar ul {
@@ -78,30 +78,6 @@ header {
     &:hover {
         color: var(--white);
         background-color: var(--black);
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #navbar {
-        width: 50%;
-    }
-
-    #navbar ul li {
-        font-size: 1rem;
-        margin: 0 0.2rem;
-        padding: 0.2rem;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    #navbar {
-        width: 70%;
-    }
-
-    #navbar ul li {
-        font-size: 0.9rem;
-        margin: 0 0.15rem;
-        padding: 0.1rem;
     }
 }
 
@@ -194,6 +170,7 @@ header {
 .product-info {
     width: 80%;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
@@ -206,6 +183,7 @@ header {
     height: auto;
     object-fit: cover;
     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1.5rem;
 }
 
 .product-text {
@@ -222,6 +200,38 @@ header {
     font-size: 1rem;
     margin: 10px 0;
     text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar {
+        width: 55%;
+    }
+
+    #navbar ul li {
+        font-size: 1rem;
+        margin: 0 0.2rem;
+        padding: 0.2rem;
+    }
+
+    .product-info {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #navbar {
+        width: 70%;
+    }
+
+    #navbar ul li {
+        font-size: 0.9rem;
+        margin: 0 0.15rem;
+        padding: 0.1rem;
+    }
+
+    .product-info {
+        width: 95%;
+    }
 }
 
 /* TESTIMONIAL SECTION */
